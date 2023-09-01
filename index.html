@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio S.C.A</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ASC</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Angel.png" alt="">
+            </div>
+            <d>ÁNGEL SÁNCHEZ COLORADO</d>
+            <h2>Ingeniero en Ciencias de la Computación</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/Angel.Sanchez.RFZOOM"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/AngelSanchez060100"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.link/px9k5x"><i class="fa-brands fa-whatsapp"></i></a>
+               
+                <a href="https://discord.gg/Qzpg3R6v5N"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://paypal.me/sanchezcoloradoangel?country.x=MX&locale.x=es_XC"><i class="fa-brands fa-paypal"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p class="justificado"><span>Hola, soy Ángel Sánchez Colorado</span> Ingeniero en Ciencias de la Computación egresado de la 
+                Universidad Autónoma del Estado de México, experiencia en la elaboración de software y sistemas web, 
+                gestión de bases de datos, interconexión de redes computacionales e interacción Hombre-Maquina, así 
+                como en mantenimiento general de hardware computacional y sus derivados.
+                </p>
+                <p class="justificado">Tambien soy Técnico electrico con experiencia en la instalación de cableado de casas-habitación, negocios, etc. 
+                    Lo cual incluye timbres, camaras de circuito cerrado, regaderas electricas, contactos-apagadores, centros de carga,
+                    conmutadores termomagnéticos etc.
+                </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de Nac</strong>
+                            06/01/2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (55)-40-22-03-84
+                        </li>
+                        <li>
+                            <strong>Email 1</strong>
+                            sanchezcoloradoangel@gmail.com
+                        </li>
+                        <li>
+                            <strong>Email 2</strong>
+                            sanchezcoloradoangel@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Valle de Chalco, 56617, Estado de México
+                        </li>
+                    
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MECANICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-house"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Computo</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plug"></i>
+                            <span>ELECTRICIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <span>REDES</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="img/CURRICULUM_VITAE_SCA.pdf" download="CV_ING_ÁNGEL_SÁNCHEZ_COLORADO"><button download="curriculum">
+                Descargar CV PDF <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button></a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>CONOCIMIENTOS</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Electronica</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Electricidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Matematicas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Hardware/Mantemiento</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Programación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Personales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>91%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4 class="centrado">Ingeniería en Ciencias de la Computación</h4>
+                        <span class="casa">Universidad Autónoma del Estado de México</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p>-Título Profesional</p>
+                        <p>-Centro Universitario UAEM Valle de Chalco</p>
+                        <p class="justificado">-Ubicación: Avenida Hermenegildo Galeana, Núm. 3, Colonia Santiago, Valle de Chalco, 
+                            Estado de México.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 class="centrado">Preparatoria General</h4>
+                        <span class="casa">Preparatoria Oficial Núm. 123</span>
+                        <span class="fecha">2015 - 2018</span>
+                        <p>-Certificado total de estudios</p>
+                        <p>-CCT. 15EBH0250U</p>
+                        <p class="justificado">-Ubicación: Avenida Leona Vicario S/N, casi esquina con Oriente 7, Colonia Independencia, 
+                            Valle de Chalco, Estado de México.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4 class="centrado">Técnico en electricidad</h4>
+                        <span class="casa">Secundaria Técnica Núm. 110</span>
+                        <span class="fecha">2012 - 2015</span>
+                        <p>-Certificado total de estudios</p>
+                        <p>-CCT. 15DST0118I</p>
+                        <p class="justificado">-Ubicación: Avenida Leona Vicario S/N, esquina con Oriente 5, Colonia Independencia, 
+                            Valle de Chalco, Estado de México.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4 class="centrado">Desarrollador JAVA Jr</h4>
+                        <span class="casa">Ids Comercial</span>
+                        <span class="fecha">2023</span>
+                        <p class="justificado">Como desarrolador para Ids Comercial pude capacitarme en diversas TI (Tenologías de la información) para el fortalecimiento
+                            de paradigmas de Programación.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4 class="centrado">Desarrollador WEB</h4>
+                        <span class="casa">Colegio Militar de T y C</span>
+                        <span class="fecha">febrero 2022 - octubre 2022</span>
+                        <p class="justificado">Como desarrollador web del Colegio Militar puede gestionar, administrar y crear un sistema 
+                            web capaz de mantener y preservar unos de los temas mas importantes en la actualidad que es 
+                            la seguridad, un sistema el cual se implemento para la entrada y salida de dicha institución, el 
+                            cual implementa la lectura de datos biométricos para una mayor seguridad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4 class="centrado">Enlace servidor de la nación</h4>
+                        <span class="casa">Secretaria de Bienestar</span>
+                        <span class="fecha">marzo 2020 - febrero 2021</span>
+                        <p  class="justificado">Como servidor de la nación logre desarrollar actividades de gestión de base de datos del sistema 
+                            de pensión del adulto mayor y así poder simplificar el trabajo de mis excompañeros para la 
+                            búsqueda, actualización y generación de nuevos registros dentro del proceso.
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/so3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>SISTEMAS OPERATIVOS</h3>
+                        <p>- Windows</p>
+                        <p>- Linux</p>
+                        <p>- MacOS</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/idi.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Idiomas</h3>
+                        <p>- Español (Lengua Nativa)</p>
+                        <p>- Inglés (Intermedio B1)</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/office.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Microsoft Office</h3>
+                        <p>- Word</p>
+                        <p>- Excel</p>
+                        <p>- PowerPoint</p>
+                        <p>- Publisher</p>
+                        <p>- Access BD</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ELE.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Electricidad</h3>
+                        <p>- Instalaciones</p>
+                        <p>- Cotizaciones</p>
+                        <p>- Diagramas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/base1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Base de Datos</h3>
+                        <p>- SQL Server</p>
+                        <p>- MS SQL</p>
+                        <p>- MaríaDB</p>
+                        <p>- MySQL</p>
+                        <p>- Postgre SQL</p>
+                        <p>- Oracle</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/har.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mantenimiento y reparación de hardware</h3>
+                        <p>- Comutadoras</p>
+                        <p>- Impresoras</p>
+                        <p>- Celulares</p>
+                        <p>- Modems</p>
+                        <p>- Etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- FOOTER CONTACTO -->
+    <footer id="contacto" class="contacto">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <h3>Contacto</h3>
+        <h2>PONTE EN CONTACTO!</h2>
+        <div class="contenido-seccion">
+            <div class="telefono">
+                <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+                <p>(+52)55-40-22-03-84</p>
+            </div>
+            <div class="correo">
+                <span><i class="fa-solid fa-square-envelope"></i> Correo Electronico</span>
+                <p>sanchezcoloradoangel@gmail.com</p>
+                <p>sanchezcoloradoangel@hotmail.com</p>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="img/EFAM-LOGO.svg" alt="">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
